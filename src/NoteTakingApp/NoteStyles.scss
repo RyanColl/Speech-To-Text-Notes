@@ -1,0 +1,27 @@
+.note-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.folder-navigation {
+    flex-grow: 10;
+    height: 100%;
+    padding: 0.5em;
+    display: flex;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+.note-navigation {
+    flex-grow: 15;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    padding: 0.5em;
+}
+.note-section {
+    flex-grow: 42;
+    height: 100%;
+    background-color: white;
+}
+
