@@ -1,11 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { motion } from 'framer-motion';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <motion.img 
+        style={{height: '40vmin'}} 
+        src={logo} 
+        initial={{scale: 1}} 
+        animate={{rotate: 360}} 
+        transition={{duration: 10, repeat: true, ease: 'linear'}} 
+        alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
